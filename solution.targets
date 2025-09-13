@@ -30,6 +30,7 @@
 
   <!-- Manual overrides -->
   <PropertyGroup>
+	<GamePath>C:\Program Files (x86)\Steam\steamapps\common\Dave the Diver</GamePath>
     <BepInExPath>$(GamePath)\BepInEx</BepInExPath>
     <ManagedDataPath>$(BepInExPath)\interop</ManagedDataPath>
     <!-- <ManagedDataPath>$(GamePath)\DaveTheDiver_Data\Managed</ManagedDataPath> -->

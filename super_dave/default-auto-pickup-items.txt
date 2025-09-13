@@ -563,11 +563,12 @@ SeaGrape_Name
 # Seaweed_Wakame_Name
 Sesame_Name
 # Shellfish_Big001_Name
-Shellfish001_Name
-Shellfish002_Name
-Shellfish003_Name
-Shellfish005_Name
-Shellfish006_Name
+# Shellfish001_Name
+# Shellfish002_Name
+# Shellfish003_Name
+# Shellfish004_Name
+# Shellfish005_Name
+# Shellfish006_Name
 # Shortfin_Mako
 SilverBowl_Name
 # Small_Gold_Name

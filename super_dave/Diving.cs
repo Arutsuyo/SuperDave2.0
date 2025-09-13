@@ -33,6 +33,7 @@ class Diving {
     private static List<string> m_all_pickup_item_names = new List<string>();
     private static Dictionary<string, bool> m_enabled_pickup_items = new Dictionary<string, bool>();
 
+
     private void initialize() {
         if (this.m_is_initialized) {
             return;
@@ -234,6 +235,9 @@ class Diving {
         }
     }
 
+
+    public static string[] BannedFromPickup = { "ShellFish004", "Chest_O2" };
+
     public class Updaters {
         private static void auto_pickup<T>(bool enabled, PlayerCharacter player, Vector3 player_pos, Func<T, bool> callback) where T : MonoBehaviour {
             if (!enabled) {
@@ -256,8 +260,12 @@ class Diving {
                         }
                     } catch { }
                 } else if (item is InstanceItemChest chest && (callback == null || callback(item))) {
-                    chest.SuccessInteract(player);
-                    m_next_frame_destroy_objects.Add(chest.gameObject);
+                    DDPlugin._info_log($"^^ Auto-Pickup Item DEBUG - name_key: {chest.name}");
+                    if (!BannedFromPickup.Any(chest.name.Contains))
+                    {
+                        chest.SuccessInteract(player);
+                        m_next_frame_destroy_objects.Add(chest.gameObject);
+                    }
                 } else if (item is BreakableLootObject breakable && (callback == null || callback(item))) {
                     breakable.OnTakeDamage(new AttackData() {
                         damage = 99999,
