@@ -68,9 +68,13 @@ public abstract class DDPlugin : BasePlugin {
     public string get_nexus_dir() {
         try {
             string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            _info_log("Checking Nexus Dir: " + path);
+
             foreach (string file in new string[] { "nexus", this.m_plugin_info["guid"] }) {
-                if (!Directory.Exists(path = Path.Combine(path, file))) {
-                    return null;
+                if (!Directory.Exists(path = Path.Combine(path, file)) )
+				{
+					_error_log( "** DDPlugin.get_nexus_dir ERROR - File Missing: " + path );
+					return null;
                 }
             }
             return path;
@@ -80,19 +84,25 @@ public abstract class DDPlugin : BasePlugin {
         return null;
     }
 
-    protected void create_nexus_page() {
-        if (m_plugin_info == null) {
+    protected void create_nexus_page()
+	{
+		logger.LogInfo( "create_nexus_page : Generating Data" );
+
+		if (m_plugin_info == null) {
             logger.LogWarning("* create_nexus_page WARNING - m_plugin_info dict must be initialized before calling this method.");
             return;
         }
         string nexus_dir = this.get_nexus_dir();
         if (nexus_dir == null) {
-            return;
+			logger.LogWarning( "* create_nexus_page WARNING - nexus_dir = null." );
+			return;
         }
         string template_path = Path.Combine(nexus_dir, "template.txt");
         string output_path = Path.Combine(nexus_dir, "generated.txt");
-        if (!File.Exists(template_path)) {
-            return;
+        if (!File.Exists(template_path) )
+		{
+			logger.LogWarning( "* create_nexus_page WARNING - template file is missing." );
+			return;
         }
         string template_data = File.ReadAllText(template_path);
         Dictionary<string, List<string[]>> categories = new Dictionary<string, List<string[]>>();
@@ -127,8 +137,9 @@ public abstract class DDPlugin : BasePlugin {
         this.m_plugin_info["config_options"] = lines;
         foreach (KeyValuePair<string, string> kvp in this.m_plugin_info) {
             template_data = template_data.Replace("[[" + kvp.Key + "]]", kvp.Value);
-        }
-        File.WriteAllText(output_path, template_data);
+		}
+		logger.LogInfo( "create_nexus_page : Writing Page" );
+		File.WriteAllText(output_path, template_data);
     }
 }
 

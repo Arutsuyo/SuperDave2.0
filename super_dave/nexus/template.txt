@@ -5,6 +5,12 @@ Current Version: [[version]] ([url=https://github.com/[[author]]/[[repo]]/blob/m
 
 [[short_description]]
 
+Arutsuyo:
+I've picked this mod up from the previous creator and extended it to support more features!
+So far I've finished the Harpoon Head granting!
+I've implemented a Gun Hotswap feature with level checks!
+I also added a full heal hotkey.
+
 See the config options below for a complete list of features and how to use them.  If you have ideas or issues see the [i]Source Code and Bug Reporting[/i] section at the bottom of the page.  Thanks!
 
 [size=4][b][u]Installation[/u][/b][/size]
@@ -41,10 +47,3 @@ There is a new config file that will be created after the first run of this vers
 
 All of my mods are open source on GitHub here: [url=https://github.com/[[author]]/[[repo]]]https://github.com/[[author]]/[[repo]][/url]
 Please let me know in the Posts section if you have problems or ideas for new mods/features.  Or, even better, you can submit issues directly on the GitHub page [url=https://github.com/[[author]]/[[repo]]/issues]here[/url]).
-
-[b]PSA[/b] - It's been hard to find the time to create new mods and support the ones I've made.  If you like my mods, please consider a small tip (any amount) on Ko-fi to help me convince my wife that this modding stuff is worth my time =)  Just scan the QR code below with your phone or click it to get started.
-
-[url=https://ko-fi.com/devopsdinosaur/][img]https://i.ibb.co/5cYLp2z/kofi-donate-qrcode.png[/img][/url]
-
-Thanks a ton, and enjoy the mods!!
-dd

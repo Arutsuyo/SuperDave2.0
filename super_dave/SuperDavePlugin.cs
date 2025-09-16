@@ -17,17 +17,17 @@ using DR.Save;
 
 public static class PluginInfo {
 
-    public const string TITLE = "Super Dave 2.0";
-    public const string NAME = "super_dave_2_0";
+    public const string TITLE = "SuperDave 2.0";
+    public const string NAME = "SuperDave_2.0";
 	public const string SHORT_DESCRIPTION = "My preferred Quality of Life changes!";
 
-    public const string VERSION = "0.1.0";
+    public const string VERSION = "1.0.0";
 
     public const string AUTHOR = "Arutsuyo";
 	public const string GAME_TITLE = "Dave the Diver";
     public const string GAME = "davethediver";
-    public const string GUID = AUTHOR + "." + GAME + "." + NAME;
-	public const string REPO = "dave-the-diver-mods";
+    public const string GUID = AUTHOR + "." + NAME;
+	public const string REPO = "SuperDave2.0";
 
 	public static Dictionary<string, string> to_dict() {
 		Dictionary<string, string> info = new Dictionary<string, string>();
@@ -49,7 +49,9 @@ public class SuperDavePlugin : DDPlugin {
             this.m_plugin_info = PluginInfo.to_dict();
             Settings.Instance.load(this);
             DDPlugin.set_log_level(Settings.m_log_level.Value);
-            this.create_nexus_page();
+#if DEBUG
+			this.create_nexus_page();
+#endif
             this.m_harmony.PatchAll(); ;
 			PluginUpdater.create(this, logger);
 			Hotkeys.load();
