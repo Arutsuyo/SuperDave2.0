@@ -1,4 +1,11 @@
-﻿# 0.0.12
+﻿# 1.0.0
+
+## Features
+- Added Default Harpoon Head settings
+- Added Hotkeys for weapon granting
+- Updated to work with Steam version v1.0.5
+
+# 0.0.12 - Last update from previous author
 
 ## Bug Fixes
 - Fixed all existing features to work with latest game version (v1.0.3.1530)
