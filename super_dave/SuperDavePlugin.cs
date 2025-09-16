@@ -17,13 +17,13 @@ using DR.Save;
 
 public static class PluginInfo {
 
-    public const string TITLE = "Super Dave";
-    public const string NAME = "super_dave";
-	public const string SHORT_DESCRIPTION = "Lots of little improvements to make the game easier to play (and lots more to come)!";
+    public const string TITLE = "Super Dave 2.0";
+    public const string NAME = "super_dave_2_0";
+	public const string SHORT_DESCRIPTION = "My preferred Quality of Life changes!";
 
-    public const string VERSION = "0.0.12";
+    public const string VERSION = "0.1.0";
 
-    public const string AUTHOR = "devopsdinosaur";
+    public const string AUTHOR = "Arutsuyo";
 	public const string GAME_TITLE = "Dave the Diver";
     public const string GAME = "davethediver";
     public const string GUID = AUTHOR + "." + GAME + "." + NAME;

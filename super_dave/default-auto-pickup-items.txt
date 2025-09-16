@@ -31,6 +31,12 @@
 # Australian_Spotted_Jellyfish
 # Baby_Anomalocaris
 # Bacon_Relic
+# BalatroJoker_BluePrint
+# BalatroJoker_FourFingers
+# BalatroJoker_Pareidolia
+# BalatroJoker_Shortcut
+# BalatroJoker_SmearedJoker
+# BalatroJoker_Splash
 # BaitCapsule_Name
 # Barrel_Jellyfish
 # Barrel_Jellyfish_Tentacle_Name
@@ -80,6 +86,9 @@ BladderWrack_Name
 # Boat_GGST_Sin_Name
 # Boat_GGST_Sol_Name
 # Boat_GZHead_Name
+# Boat_LADIchiban_Name
+# Boat_LADKiryu_Name
+# Boat_LADMajima_Name
 # Boat_Lusca_Name
 # Boat_SeaBlue_Name
 Bone_Foot_Name
@@ -92,6 +101,7 @@ Bone_Skull_Name
 # Box_Jelly_Tentacle_Name
 # Box_Jellyfish
 # BoxingGloves_Name
+# Buckwheat_Name
 # California_Spiny_Lobster
 # Capelin
 # CargoBox_Name
@@ -324,6 +334,7 @@ Good_Catfood_Name
 # Great_Barracuda
 # Great_Spider_Crab
 # Green_Humphead_Parrotfish
+Green_Sea_Urchin_Name
 # Greenland_Shark
 # Greenland_Shark_Spine
 # Grey_Triggerfish
@@ -371,6 +382,7 @@ JadeThurible_Name
 # Jose_SoccerBall
 # Juvenile_Circular_BatFish
 Kajime_Name
+# Keyring_OnoMichio_Name
 # Kronosaurus_ThyroidGland
 # Large_Gold_Name
 # Loggerhead_Sea_Turtle
@@ -450,6 +462,7 @@ Miso_Name
 # Mission_Seahorse_04
 # Moray_eel
 # Moray_eel_Jaw_Name
+# MortarandPestle_Name
 # Narrow-barred_Spanish_mackerel
 # Narwhal
 # Narwhal_Tusk
@@ -487,6 +500,9 @@ Ore_Ttorbernite_Name
 # Pacificfanfish
 # Pager_Name
 # Painted_Comber
+# PasteBait_Best_Name
+# PasteBait_Good_Name
+# PasteBait_Normal_Name
 # Peacock_Squid
 # Pearl_Name
 # Pelican_Eel
@@ -498,10 +514,21 @@ Ore_Ttorbernite_Name
 # Polar_Eelpout
 # Porbeagle_Shark
 # Porbeagle_Shark_Tooth
+# Potion_Agar_Name
+# Potion_Black Coral_Name
+# Potion_Bladderwrack_Name
+# Potion_Buckbean_Name
+# Potion_Hyalonema_Name
+# Potion_Kajime_Name
+# Potion_Kelp_Name
+# Potion_SeaGrape_Name
+# Potion_Seaweed_Name
+# Potion_SouthernBullKelp_Name
 # Prism_Mirror_Pacificfanfish_Name
 Purple_Sea_Urchin_Name
 # Pyramid_butterflyFish
 # Qingmendous
+# RainbowCap_Name
 # Red_Bbanded_Lobster
 # Red_Bream
 # Red_Lionfish
@@ -563,12 +590,12 @@ SeaGrape_Name
 # Seaweed_Wakame_Name
 Sesame_Name
 # Shellfish_Big001_Name
-# Shellfish001_Name
-# Shellfish002_Name
-# Shellfish003_Name
+Shellfish001_Name
+Shellfish002_Name
+Shellfish003_Name
 # Shellfish004_Name
-# Shellfish005_Name
-# Shellfish006_Name
+Shellfish005_Name
+Shellfish006_Name
 # Shortfin_Mako
 SilverBowl_Name
 # Small_Gold_Name

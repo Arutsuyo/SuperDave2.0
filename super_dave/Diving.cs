@@ -1,13 +1,14 @@
-﻿using HarmonyLib;
+﻿using DR;
+using EvilFactory;
+using HarmonyLib;
+using Il2CppSystem.Globalization;
 using System;
 using System.Collections.Generic;
-using UnityEngine;
-using DR;
 using System.IO;
-using System.Reflection;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.CompilerServices;
-using Il2CppSystem.Globalization;
+using UnityEngine;
 
 class Diving {
     private static Diving m_instance = null;
@@ -21,11 +22,15 @@ class Diving {
     }
     private static DDPlugin m_plugin = null;
     private bool m_is_initialized = false;
+    private bool m_is_data_initialized = false;
+    private bool m_is_inventory_initialized = false;
     private bool m_toxic_aura_enabled_by_hotkey = true;
     private bool m_toxic_aura_sleep_by_hotkey = true;
     private const int SLEEP_BUFF_ID = 14080415;
     private const float SLEEP_BUFF_VALUE = 9999999999f;
     private static bool m_did_set_sleep_buff_value = false;
+    private static int m_weapon_level = 0;
+    private Dictionary<GunItemType, List<GunSpecData>> gun_specs = new Dictionary<GunItemType, List<GunSpecData>>();
     private Dictionary<HarpoonHeadItemType, List<HarpoonHeadSpecData>> harpoon_heads = new Dictionary<HarpoonHeadItemType, List<HarpoonHeadSpecData>>();
     private Dictionary<HarpoonItemType, HarpoonSpecData> harpoon_specs = new Dictionary<HarpoonItemType, HarpoonSpecData>();
     private static List<GameObject> m_next_frame_destroy_objects = new List<GameObject>();
@@ -38,25 +43,125 @@ class Diving {
         if (this.m_is_initialized) {
             return;
         }
+
+        Init_data();
+
+        this.set_harpoon_head(Singletons.Player.CurrentInstanceItemInventory);
+
+        this.load_enabled_pickup_items();
+        this.m_is_initialized = true;
+    }
+
+    private void Init_data()
+    {
+        if(this.m_is_data_initialized) { 
+            return;
+        }
+
         this.m_toxic_aura_enabled_by_hotkey = Settings.m_toxic_aura_enabled.Value;
         this.m_toxic_aura_sleep_by_hotkey = Settings.m_toxic_aura_sleep.Value;
-        foreach (HarpoonSpecData spec in Resources.FindObjectsOfTypeAll<HarpoonSpecData>()) {
+
+        foreach (GunSpecData spec in Resources.FindObjectsOfTypeAll<GunSpecData>())
+        {
+            if (!this.gun_specs.ContainsKey(spec.GunType))
+            {
+                this.gun_specs[spec.GunType] = new List<GunSpecData>();
+            }
+            //DDPlugin._debug_log($"GunType:{spec.GunType,-30} GunRootType:{spec.GunRootType,-20} Damage:{spec.Damage.ToString("D3"),-5} Name:{spec.Name,-25}");
+            this.gun_specs[spec.GunType].Add(spec);
+        }
+		foreach ( GunItemType type in gun_specs.Keys )
+		{
+			gun_specs [ type ].Sort( ( x, y ) =>
+			{
+				int res = x.Damage.CompareTo(y.Damage);
+                if(res != 0)
+                    return res;
+
+                if(x.buffDatas.Count > 0)
+                    res = x.buffDatas[0].Level.CompareTo(y.buffDatas[0].Level);
+
+				if ( res != 0 )
+					return res;
+
+				switch ( x.GunRootType )
+				{
+					case GunRootType.BasicRifle:
+						res = x.Name.CompareTo( y.Name );
+                        if(res == 0 && x.GunType == GunItemType.GrenadeLauncher)
+                            res = x.ExplosionSplashDamage.CompareTo( y.ExplosionSplashDamage );
+						break;
+
+					case GunRootType.SleepGun:
+						res = x.Name.CompareTo( y.Name );
+						break;
+
+					case GunRootType.NetGun:
+						res = x.CaptureCount.CompareTo( y.CaptureCount );
+						break;
+
+					case GunRootType.StickyBombGun:
+						if ( x.GunType == GunItemType.MineBombGun || x.GunType == GunItemType.MineBombGun02 || x.GunType == GunItemType.SleepBombGun )
+						{
+							res = x.Name.CompareTo( y.Name );
+							break;
+						}
+						res = x.ExplosionSplashDamage.CompareTo( y.ExplosionSplashDamage );
+						break;
+
+					case GunRootType.GrenadeLauncher:
+						res = x.ExplosionSplashDamage.CompareTo( y.ExplosionSplashDamage );
+						break;
+
+					case GunRootType.IceGun:
+						res = x.buffEffects[ 0 ].Level.CompareTo( y.buffEffects[ 0 ].Level );
+						break;
+
+					default:
+						break;
+				}
+
+				if ( res == 0 )
+				{
+					DDPlugin._warn_log( $"FIX GUN COMPARE FOR {x.GunType}" );
+					DDPlugin._debug_log( $"X:{x.GunType}:{x.Name} - Damage:{x.Damage} Burst:{x.BurstCount} Splash:{x.ExplosionSplashDamage} Power:{x.Power} UIDam:{x.UIDisplayDamage}" + ( x.buffDatas.Count > 0 ? $" BufD.Level:{x.buffDatas.Count,-5}" : "" ) );
+					DDPlugin._debug_log( $"Y:{y.GunType}:{y.Name} - Damage:{y.Damage} Burst:{y.BurstCount} Splash:{y.ExplosionSplashDamage} Power:{y.Power} UIDam:{x.UIDisplayDamage}" + ( y.buffDatas.Count > 0 ? $" BufD.Level:{y.buffDatas.Count,-5}\n" : "\n" ) );
+				}
+
+				return res;
+			} );
+		}
+
+		foreach (HarpoonSpecData spec in Resources.FindObjectsOfTypeAll<HarpoonSpecData>())
+        {
             //_debug_log($"{spec.Name}");
             this.harpoon_specs[spec.HarpoonType] = spec;
         }
-        foreach (HarpoonHeadSpecData spec in Resources.FindObjectsOfTypeAll<HarpoonHeadSpecData>()) {
-            HarpoonHeadItemType head_type = (HarpoonHeadItemType) ReflectionUtils.il2cpp_get_field_value<int>(spec, "m_HarpoonHeadType");
-            if (!this.harpoon_heads.ContainsKey(head_type)) {
+        foreach (HarpoonHeadSpecData spec in Resources.FindObjectsOfTypeAll<HarpoonHeadSpecData>())
+        {
+            HarpoonHeadItemType head_type = (HarpoonHeadItemType)ReflectionUtils.il2cpp_get_field_value<int>(spec, "m_HarpoonHeadType");
+            if (!this.harpoon_heads.ContainsKey(head_type))
+            {
                 this.harpoon_heads[head_type] = new List<HarpoonHeadSpecData>();
             }
-            //_debug_log($"{head_type} {spec.Damage}");
+            //DDPlugin._debug_log($"Type:{head_type,-15} Damage:{spec.Damage,-5}");
             this.harpoon_heads[head_type].Add(spec);
         }
-        foreach (List<HarpoonHeadSpecData> specs in this.harpoon_heads.Values) {
-            specs.Sort((x, y) => x.Damage.CompareTo(y.Damage));
+        foreach (List<HarpoonHeadSpecData> specs in this.harpoon_heads.Values)
+        {
+            specs.OrderBy(e => e.Damage).ThenBy(e => e.buffDatas[0].Level);
+            //specs.Sort((x, y) =>
+            //{
+            //    if (x.HarpoonHeadType == HarpoonHeadItemType.SleepHead)
+            //    {
+            //        return x.buffDatas[0].Level.CompareTo(y.buffDatas[0].Level);
+            //    }
+
+            //    return x.Damage.CompareTo(y.Damage);
+            //});
         }
-        this.load_enabled_pickup_items();
-        this.m_is_initialized = true;
+
+        this.m_is_data_initialized = true;
     }
 
     public static void load(DDPlugin plugin) {
@@ -138,23 +243,125 @@ class Diving {
         inventory.currentEquipInInventory[EquipmentType.Harpoon] = this.harpoon_specs[type];
         _debug_log($"{inventory.GetEquipedItem(EquipmentType.Harpoon).Name}");
     }
-
-    public void set_harpoon_head(InstanceItemInventory inventory) {
-        HarpoonHeadItemType type;
-        if (string.IsNullOrEmpty(m_harpoon_head_type.Value)) {
-            return;
-        }
-        if (!Enum.TryParse<HarpoonHeadItemType>(m_harpoon_head_type.Value + "Head", out type)) {
-            DDPlugin._error_log($"* set_harpoon_head WARNING - '{m_harpoon_head_type.Value}' is not a recognized type (see help info in config file).");
-            return;
-        }
-        int level = m_harpoon_head_level.Value;
-        inventory.currentEquipInInventory[EquipmentType.HarpoonHead] = harpoon_heads[type][(level < 0 ? 0 : (level > harpoon_heads[type].Count - 1 ? harpoon_heads[type].Count - 1 : level))];
-        _debug_log($"{inventory.GetEquipedItem(EquipmentType.HarpoonHead).Name}");
-    }
     */
 
-    class Patches {
+    public void set_harpoon_head(InstanceItemInventory inventory) {
+        if (this.m_is_inventory_initialized)
+        {
+            return;
+        }
+
+        HarpoonHeadItemType type;
+        DDPlugin._info_log("Reading Harpoon Head type");
+        if (string.IsNullOrEmpty(Settings.m_harpoon_head_type.Value)) {
+            DDPlugin._error_log("Harpoon Head setting is empty");
+            return;
+        }
+        if (!Enum.TryParse<HarpoonHeadItemType>(Settings.m_harpoon_head_type.Value + "Head", out type)) {
+            DDPlugin._error_log($"* set_harpoon_head WARNING - '{Settings.m_harpoon_head_type.Value}' is not a recognized type (see help info in config file).");
+            return;
+        }
+        int level = Settings.m_harpoon_head_level.Value;
+        DDPlugin._info_log($"Attempting to set Harpoon Head type {type}");
+        HarpoonHeadSpecData target_head = harpoon_heads[type][(level < 0 ? 0 : (level > harpoon_heads[type].Count - 1 ? harpoon_heads[type].Count - 1 : level))];
+        
+        inventory.harpoonHandler.EquipItem(target_head, true);
+        SpecDataBase base_spec = inventory.GetEquipedItem(EquipmentType.HarpoonHead);
+        DDPlugin._debug_log($"Name:{base_spec.Name} Damage:{base_spec.Damage} ElementType:{base_spec.elementType} Element:{base_spec.GetElement} Collected:{base_spec.WasCollected}");
+
+        m_is_inventory_initialized = true;
+    }
+
+    public void HealPlayer ()
+	{
+		DDPlugin._info_log( "HealPlayer" );
+		PlayerCharacter player;
+		if ( !Settings.m_enabled.Value || ( player = Singletons.Player ) == null || !player.isActiveAndEnabled )
+		{
+			return;
+		}
+
+		player.BreathHandler.HealHP( player.BreathHandler.MaxHP - player.BreathHandler.HP );
+	}
+
+	public void IncreasePlayerWeapon ()
+	{
+		DDPlugin._info_log( "IncreasePlayerWeapon" );
+		PlayerCharacter player;
+		if ( !Settings.m_enabled.Value || ( player = Singletons.Player ) == null || !player.isActiveAndEnabled )
+		{
+			return;
+		}
+
+        GunSpecData targetSpec = player?.CurrentInstanceItemInventory?.gunHandler.m_GunSpec;
+
+        if ( gun_specs[ targetSpec.GunType ].Count - 1 > m_weapon_level )
+            ++m_weapon_level;
+
+		GunSpecData newSpec = gun_specs[targetSpec.GunType][m_weapon_level];
+		player?.CurrentInstanceItemInventory?.gunHandler.EquipItem( newSpec, true );
+	}
+
+	public void DecreasePlayerWeapon ()
+	{
+		DDPlugin._info_log( "IncreasePlayerWeapon" );
+		PlayerCharacter player;
+		if ( !Settings.m_enabled.Value || ( player = Singletons.Player ) == null || !player.isActiveAndEnabled )
+		{
+			return;
+		}
+
+		GunSpecData targetSpec = player?.CurrentInstanceItemInventory?.gunHandler.m_GunSpec;
+		if ( m_weapon_level > 0)
+			--m_weapon_level;
+
+		GunSpecData newSpec = gun_specs[targetSpec.GunType][m_weapon_level];
+		player?.CurrentInstanceItemInventory?.gunHandler.EquipItem( newSpec, true );
+	}
+
+	public void GivePlayerTranq ()
+	{
+		DDPlugin._info_log( "GivePlayerTranq" );
+		PlayerCharacter player;
+		if ( !Settings.m_enabled.Value || ( player = Singletons.Player ) == null || !player.isActiveAndEnabled )
+		{
+			return;
+		}
+
+		GunSpecData targetSpec = gun_specs[GunItemType.SleepGun02][m_weapon_level];
+
+		player?.CurrentInstanceItemInventory?.gunHandler.EquipItem( targetSpec, true );
+	}
+
+	public void GivePlayerNet ()
+	{
+		DDPlugin._info_log( "GivePlayerNet" );
+		PlayerCharacter player;
+		if ( !Settings.m_enabled.Value || ( player = Singletons.Player ) == null || !player.isActiveAndEnabled )
+		{
+			return;
+		}
+
+		GunSpecData targetSpec = gun_specs[GunItemType.L_NetGun][m_weapon_level];
+
+		player?.CurrentInstanceItemInventory?.gunHandler.EquipItem( targetSpec, true );
+	}
+
+	public void GivePlayerSnipe ()
+	{
+		DDPlugin._info_log( "GivePlayerSnipe" );
+		PlayerCharacter player;
+		if ( !Settings.m_enabled.Value || ( player = Singletons.Player ) == null || !player.isActiveAndEnabled )
+		{
+			return;
+		}
+
+		GunSpecData targetSpec = gun_specs[GunItemType.Poison_SniperGun02][m_weapon_level];
+
+		player?.CurrentInstanceItemInventory?.gunHandler.EquipItem( targetSpec, true );
+	}
+
+	class Patches {
         [HarmonyPatch(typeof(BuffHandler), "Start")]
         class HarmonyPatch_BuffHandler_Start {
             private static void Postfix(BuffHandler __instance) {
@@ -350,19 +557,65 @@ class Diving {
             }
         }
 
-        public static void keypress_update() {
-            if (!Diving.Instance.m_is_initialized) { 
-                return; 
+        public static void keypress_update ()
+		{
+			DDPlugin._info_log( "keypress_update" );
+			if ( !Diving.Instance.m_is_initialized )
+            {
+                return;
             }
-            if (Hotkeys.is_hotkey_down(Hotkeys.HOTKEY_AURA_ON)) {
+
+			DDPlugin._info_log( "keypress_update - Checking Keys" );
+			if ( Hotkeys.is_hotkey_down( ( int )Hotkeys.HotKeyIndex.HOTKEY_AURA_ON ) )
+            {
                 Diving.Instance.m_toxic_aura_enabled_by_hotkey = !Diving.Instance.m_toxic_aura_enabled_by_hotkey;
-                PluginUpdater.Instance.trigger("toxic_aura_update");
+				DDPlugin._info_log( "keypress_update - HOTKEY_AURA_ON" );
+				PluginUpdater.Instance.trigger( "toxic_aura_update" );
             }
-            if (Hotkeys.is_hotkey_down(Hotkeys.HOTKEY_AURA_TYPE)) {
+            if ( Hotkeys.is_hotkey_down( ( int )Hotkeys.HotKeyIndex.HOTKEY_AURA_TYPE ) )
+            {
                 Diving.Instance.m_toxic_aura_sleep_by_hotkey = !Diving.Instance.m_toxic_aura_sleep_by_hotkey;
-                PluginUpdater.Instance.trigger("toxic_aura_update");
+				DDPlugin._info_log( "keypress_update - HOTKEY_AURA_TYPE" );
+				PluginUpdater.Instance.trigger( "toxic_aura_update" );
             }
-        }
+            try
+			{
+				if ( Hotkeys.is_hotkey_down( ( int )Hotkeys.HotKeyIndex.HOTKEY_HEAL) )
+				{
+					DDPlugin._info_log( "keypress_update - HOTKEY_HEAL" );
+					Diving.Instance.HealPlayer();
+				}
+				if ( Hotkeys.is_hotkey_down( ( int )Hotkeys.HotKeyIndex.HOTKEY_TRANQ ) )
+				{
+					DDPlugin._info_log( "keypress_update - HOTKEY_TRANQ" );
+					Diving.Instance.GivePlayerTranq();
+				}
+				if ( Hotkeys.is_hotkey_down( ( int )Hotkeys.HotKeyIndex.HOTKEY_NET ) )
+				{
+					DDPlugin._info_log( "keypress_update - HOTKEY_NET" );
+					Diving.Instance.GivePlayerNet();
+				}
+				if ( Hotkeys.is_hotkey_down( ( int )Hotkeys.HotKeyIndex.HOTKEY_SNIPE ) )
+				{
+					DDPlugin._info_log( "keypress_update - HOTKEY_SNIPE" );
+					Diving.Instance.GivePlayerSnipe();
+				}
+				if ( Hotkeys.is_hotkey_down( ( int )Hotkeys.HotKeyIndex.HOTKEY_WEAP_UP ) )
+				{
+					DDPlugin._info_log( "keypress_update - HOTKEY_WEAP_UP" );
+					Diving.Instance.IncreasePlayerWeapon();
+				}
+				if ( Hotkeys.is_hotkey_down( ( int )Hotkeys.HotKeyIndex.HOTKEY_WEAP_DOWN ) )
+				{
+					DDPlugin._info_log( "keypress_update - HOTKEY_WEAP_DOWN" );
+					Diving.Instance.DecreasePlayerWeapon();
+				}
+			}
+            catch (Exception e)
+            {
+				DDPlugin._error_log( "** Diving.keypress_update ERROR - Could not Access player inventory - " + e );
+			}
+		}
 
         public static int m_modified_character_hash = 0;
 
