@@ -40,7 +40,6 @@ public class Settings {
     public static ConfigEntry<bool> m_large_pickups;
     //public static ConfigEntry<string> m_harpoon_type;
     public static ConfigEntry<string> m_harpoon_head_type;
-    public static ConfigEntry<int> m_harpoon_head_level;
     public static ConfigEntry<bool> m_disable_item_info_popup;
 
     // Farm
@@ -61,8 +60,9 @@ public class Settings {
     public static ConfigEntry<string> m_hotkey_modifier;
     public static ConfigEntry<string> m_hotkey_toggle_aura_on;
 	public static ConfigEntry<string> m_hotkey_change_aura_type;
-	public static ConfigEntry<string> m_hotkey_Heal; 
-    public static ConfigEntry<string> m_hotkey_Net;
+	public static ConfigEntry<string> m_hotkey_Heal;
+	public static ConfigEntry<string> m_hotkey_Harpoon;
+	public static ConfigEntry<string> m_hotkey_Net;
 	public static ConfigEntry<string> m_hotkey_Tranq;
 	public static ConfigEntry<string> m_hotkey_Snipe;
 	public static ConfigEntry<string> m_hotkey_Weapon_Up;
@@ -80,6 +80,7 @@ public class Settings {
 		m_hotkey_toggle_aura_on = this.m_plugin.Config.Bind<string>( "Hotkeys", "Hotkey - Toggle Toxic Aura On/Off", "Backspace", "Comma-separated list of Unity Keycodes, any of which will toggle the toxic aura on/off (if enabled).\n\tSee this link for valid Unity KeyCode strings (https://docs.unity3d.com/ScriptReference/KeyCode.html)" );
 		m_hotkey_change_aura_type = this.m_plugin.Config.Bind<string>( "Hotkeys", "Hotkey - Change Toxic Aura Mode", "Backslash", "Comma-separated list of Unity Keycodes, any of which will change the toxic aura mode (if enabled) between Kill/Sleep.\n\tSee this link for valid Unity KeyCode strings (https://docs.unity3d.com/ScriptReference/KeyCode.html)" );
 		m_hotkey_Heal = this.m_plugin.Config.Bind<string>( "Hotkeys", "Hotkey - Heal", "Keypad0", "Full Heal.\n\tSee this link for valid Unity KeyCode strings (https://docs.unity3d.com/ScriptReference/KeyCode.html)" );
+		m_hotkey_Harpoon = this.m_plugin.Config.Bind<string>( "Hotkeys", "Hotkey - Harpoon", "KeypadDivide", "Give Dave the preferred Harpoon Head.\n\tSee this link for valid Unity KeyCode strings (https://docs.unity3d.com/ScriptReference/KeyCode.html)" );
 		m_hotkey_Net = this.m_plugin.Config.Bind<string>( "Hotkeys", "Hotkey - Net Gun", "Keypad1", "Give Dave a Net Gun.\n\tSee this link for valid Unity KeyCode strings (https://docs.unity3d.com/ScriptReference/KeyCode.html)" );
 		m_hotkey_Tranq = this.m_plugin.Config.Bind<string>( "Hotkeys", "Hotkey - Tranq Gun", "Keypad2", "Give Dave a Tranq Gun.\n\tSee this link for valid Unity KeyCode strings (https://docs.unity3d.com/ScriptReference/KeyCode.html)" );
 		m_hotkey_Snipe = this.m_plugin.Config.Bind<string>( "Hotkeys", "Hotkey - Sniper", "Keypad3", "Give Dave a Sniper.\n\tSee this link for valid Unity KeyCode strings (https://docs.unity3d.com/ScriptReference/KeyCode.html)" );
@@ -113,7 +114,6 @@ public class Settings {
         m_auto_pickup_radius = this.m_plugin.Config.Bind<float>("Diving", "Diving - Auto-pickup: Radius", 6.0f, "Radius (in meters?) around the character in which objects will be automatically picked up based on enabled pickup settings (float, default 6.0f).");
         //m_harpoon_type = this.m_plugin.Config.Bind<string>("Diving", "Diving - Harpoon Type", "", "Harpoon type (one of: Old, Iron, Pump, Merman, NewMV, Alloy) [case sensitive, set to blank to disable].");
         m_harpoon_head_type = this.m_plugin.Config.Bind<string>("Diving", "Diving - Harpoon Head Type", "", "Harpoon head type (one of: Normal, Electric, Poison, Chain, Sleep, Paralysis, Strong, Fire, Ice) [case sensitive, set to blank to disable].");
-        m_harpoon_head_level = this.m_plugin.Config.Bind<int>("Diving", "Diving - Harpoon Head Level", 0, "Harpoon head level [ignored if Harpoon Head Type is not set] (int, 1 (weakest) - 5 (strongest)).");			
         m_infinite_bullets = this.migrate_option<bool>("Diving", "Infinite Bullets", "Diving - Infinite Bullets", false, "Set to true to have infinite bullets when diving.");
         m_infinite_crab_traps = this.m_plugin.Config.Bind<bool>("Diving", "Diving - Infinite Crab Traps", false, "Set to true to enable infinite crab traps (NOTE: The popup window will still show 0 traps but can keep dropping them).");
         m_infinite_drones = this.m_plugin.Config.Bind<bool>("Diving", "Diving - Infinite Drones", false, "Set to true to enable infinite salvage drones.");

@@ -18,6 +18,7 @@ class Hotkeys {
 		HOTKEY_AURA_ON,
 		HOTKEY_AURA_TYPE,
 		HOTKEY_HEAL,
+		HOTKEY_HARPOON,
 		HOTKEY_TRANQ,
 		HOTKEY_NET,
         HOTKEY_SNIPE,
@@ -36,6 +37,7 @@ class Hotkeys {
         set_hotkey(Settings.m_hotkey_toggle_aura_on.Value, ( int )HotKeyIndex.HOTKEY_AURA_ON );
 		set_hotkey( Settings.m_hotkey_change_aura_type.Value, ( int )HotKeyIndex.HOTKEY_AURA_TYPE );
 		set_hotkey( Settings.m_hotkey_Heal.Value, ( int )HotKeyIndex.HOTKEY_HEAL );
+		set_hotkey( Settings.m_hotkey_Harpoon.Value, ( int )HotKeyIndex.HOTKEY_HARPOON );
 		set_hotkey( Settings.m_hotkey_Tranq.Value, ( int )HotKeyIndex.HOTKEY_TRANQ );
 		set_hotkey( Settings.m_hotkey_Net.Value, ( int )HotKeyIndex.HOTKEY_NET );
 		set_hotkey( Settings.m_hotkey_Snipe.Value, ( int )HotKeyIndex.HOTKEY_SNIPE );

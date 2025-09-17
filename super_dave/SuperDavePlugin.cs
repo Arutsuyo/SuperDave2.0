@@ -96,8 +96,14 @@ public class SuperDavePlugin : DDPlugin {
 		private static void Postfix(Farm.FarmPlayerView __instance) {
 			try {
 				if (!Settings.m_enabled.Value || Settings.m_farm_walk_multiplier.Value <= 0) {
+					logger.LogDebug( "HarmonyPatch_Farm_FarmPlayerView_Setup - Skipping Farm speed" );
 					return;
 				}
+
+				float minSpeed = ReflectionUtils.il2cpp_get_field_value<float>(__instance, "m_Speed_Min");
+				float maxSpeed = ReflectionUtils.il2cpp_get_field_value<float>(__instance, "m_Speed_Max");
+				logger.LogDebug( $"HarmonyPatch_Farm_FarmPlayerView_Setup - Setting Speed to Min:{minSpeed}*{Settings.m_farm_walk_multiplier.Value} Max:{maxSpeed}*{Settings.m_farm_walk_multiplier.Value}" );
+
 				ReflectionUtils.il2cpp_get_field(__instance, "m_Speed_Min").SetValue(__instance, ReflectionUtils.il2cpp_get_field_value<float>(__instance, "m_Speed_Min") * Settings.m_farm_walk_multiplier.Value);
 				ReflectionUtils.il2cpp_get_field(__instance, "m_Speed_Max").SetValue(__instance, ReflectionUtils.il2cpp_get_field_value<float>(__instance, "m_Speed_Max") * Settings.m_farm_walk_multiplier.Value);
 			} catch (Exception e) {

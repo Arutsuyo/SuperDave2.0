@@ -1,0 +1,451 @@
+GunRootType:BasicRifle           GunType:BasicRifle                     Name:Boss_GrenadeLauncher           Damage:020   Splash:000  
+GunRootType:BasicRifle           GunType:BasicRifle                     Name:OldToyGun_1                    Damage:015   Splash:000  
+GunRootType:BasicRifle           GunType:BasicRifle                     Name:OldToyGun_2                    Damage:022   Splash:000  
+GunRootType:BasicRifle           GunType:BasicRifle                     Name:OldToyGun_3                    Damage:031   Splash:000  
+GunRootType:BasicRifle           GunType:BasicRifle                     Name:OldToyGun_4                    Damage:041   Splash:000  
+GunRootType:BasicRifle           GunType:BasicRifle                     Name:OldToyGun_5                    Damage:065   Splash:000  
+GunRootType:BasicRifle           GunType:BasicRifle                     Name:Pirate_OldToyGun_1             Damage:020   Splash:000  
+GunRootType:BasicRifle           GunType:BasicRifle                     Name:Pirate_OldToyGun_2             Damage:020   Splash:000  
+GunRootType:BasicRifle           GunType:BasicRifle                     Name:Pirate_OldToyGun_3             Damage:020   Splash:000  
+GunRootType:BasicRifle           GunType:BasicRifle                     Name:PirateBoat_OldToyGun           Damage:020   Splash:000  
+GunRootType:BasicRifle           GunType:Chain_UnderwaterRifle_01       Name:OldToyGun_1                    Damage:026   Splash:000  Level:001  
+GunRootType:BasicRifle           GunType:Chain_UnderwaterRifle_01       Name:OldToyGun_1                    Damage:028   Splash:000  Level:002  
+GunRootType:BasicRifle           GunType:Chain_UnderwaterRifle_01       Name:OldToyGun_1                    Damage:031   Splash:000  Level:003  
+GunRootType:BasicRifle           GunType:Chain_UnderwaterRifle_01       Name:OldToyGun_1                    Damage:035   Splash:000  Level:004  
+GunRootType:BasicRifle           GunType:Chain_UnderwaterRifle_01       Name:OldToyGun_1                    Damage:040   Splash:000  Level:005  
+GunRootType:BasicRifle           GunType:Chain_UnderwaterRifle_02       Name:OldToyGun_1                    Damage:030   Splash:000  Level:001  
+GunRootType:BasicRifle           GunType:Chain_UnderwaterRifle_02       Name:OldToyGun_1                    Damage:032   Splash:000  Level:002  
+GunRootType:BasicRifle           GunType:Chain_UnderwaterRifle_02       Name:OldToyGun_1                    Damage:034   Splash:000  Level:003  
+GunRootType:BasicRifle           GunType:Chain_UnderwaterRifle_02       Name:OldToyGun_1                    Damage:036   Splash:000  Level:004  
+GunRootType:BasicRifle           GunType:Chain_UnderwaterRifle_02       Name:OldToyGun_1                    Damage:039   Splash:000  Level:005  
+GunRootType:BasicRifle           GunType:Fire_UnderwaterRifle_01        Name:OldToyGun_1                    Damage:024   Splash:000  Level:001  
+GunRootType:BasicRifle           GunType:Fire_UnderwaterRifle_01        Name:OldToyGun_1                    Damage:029   Splash:000  Level:002  
+GunRootType:BasicRifle           GunType:Fire_UnderwaterRifle_01        Name:OldToyGun_1                    Damage:034   Splash:000  Level:003  
+GunRootType:BasicRifle           GunType:Fire_UnderwaterRifle_01        Name:OldToyGun_1                    Damage:039   Splash:000  Level:004  
+GunRootType:BasicRifle           GunType:Fire_UnderwaterRifle_01        Name:OldToyGun_1                    Damage:048   Splash:000  Level:005  
+GunRootType:BasicRifle           GunType:Fire_UnderwaterRifle_02        Name:OldToyGun_1                    Damage:031   Splash:000  Level:006  
+GunRootType:BasicRifle           GunType:Fire_UnderwaterRifle_02        Name:OldToyGun_1                    Damage:034   Splash:000  Level:007  
+GunRootType:BasicRifle           GunType:Fire_UnderwaterRifle_02        Name:OldToyGun_1                    Damage:038   Splash:000  Level:008  
+GunRootType:BasicRifle           GunType:Fire_UnderwaterRifle_02        Name:OldToyGun_1                    Damage:044   Splash:000  Level:009  
+GunRootType:BasicRifle           GunType:Fire_UnderwaterRifle_02        Name:OldToyGun_1                    Damage:052   Splash:000  Level:010  
+GunRootType:BasicRifle           GunType:FireWork_UnderwaterRifle       Name:OldToyGun_1                    Damage:042   Splash:000  Level:001  
+GunRootType:BasicRifle           GunType:FireWork_UnderwaterRifle       Name:OldToyGun_1                    Damage:045   Splash:000  Level:002  
+GunRootType:BasicRifle           GunType:FireWork_UnderwaterRifle       Name:OldToyGun_1                    Damage:049   Splash:000  Level:003  
+GunRootType:BasicRifle           GunType:FireWork_UnderwaterRifle       Name:OldToyGun_1                    Damage:054   Splash:000  Level:004  
+GunRootType:BasicRifle           GunType:FireWork_UnderwaterRifle       Name:OldToyGun_1                    Damage:060   Splash:000  Level:005  
+GunRootType:BasicRifle           GunType:GrenadeLauncher                Name:Boss_GrenadeLauncher           Damage:020   Splash:025  
+GunRootType:BasicRifle           GunType:GrenadeLauncher                Name:Boss_GrenadeLauncher           Damage:020   Splash:040  
+GunRootType:BasicRifle           GunType:GrenadeLauncher                Name:Boss_GrenadeLauncher           Damage:020   Splash:050  
+GunRootType:BasicRifle           GunType:LaserGun                       Name:OldToyGun_1                    Damage:999   Splash:000  
+GunRootType:BasicRifle           GunType:Paralysis_UnderwaterRifle_01   Name:OldToyGun_1                    Damage:033   Splash:000  Level:001  
+GunRootType:BasicRifle           GunType:Paralysis_UnderwaterRifle_01   Name:OldToyGun_1                    Damage:040   Splash:000  Level:002  
+GunRootType:BasicRifle           GunType:Paralysis_UnderwaterRifle_01   Name:OldToyGun_1                    Damage:049   Splash:000  Level:003  
+GunRootType:BasicRifle           GunType:Paralysis_UnderwaterRifle_01   Name:OldToyGun_1                    Damage:059   Splash:000  Level:004  
+GunRootType:BasicRifle           GunType:Paralysis_UnderwaterRifle_01   Name:OldToyGun_1                    Damage:083   Splash:000  Level:005  
+GunRootType:BasicRifle           GunType:Paralysis_UnderwaterRifle_02   Name:OldToyGun_1                    Damage:053   Splash:000  Level:001  
+GunRootType:BasicRifle           GunType:Paralysis_UnderwaterRifle_02   Name:OldToyGun_1                    Damage:060   Splash:000  Level:002  
+GunRootType:BasicRifle           GunType:Paralysis_UnderwaterRifle_02   Name:OldToyGun_1                    Damage:069   Splash:000  Level:003  
+GunRootType:BasicRifle           GunType:Paralysis_UnderwaterRifle_02   Name:OldToyGun_1                    Damage:079   Splash:000  Level:004  
+GunRootType:BasicRifle           GunType:Paralysis_UnderwaterRifle_02   Name:OldToyGun_1                    Damage:103   Splash:000  Level:005  
+GunRootType:BasicRifle           GunType:Poison_UnderwaterRifle_01      Name:OldToyGun_1                    Damage:023   Splash:000  Level:001  
+GunRootType:BasicRifle           GunType:Poison_UnderwaterRifle_01      Name:OldToyGun_1                    Damage:026   Splash:000  Level:002  
+GunRootType:BasicRifle           GunType:Poison_UnderwaterRifle_01      Name:OldToyGun_1                    Damage:029   Splash:000  Level:003  
+GunRootType:BasicRifle           GunType:Poison_UnderwaterRifle_01      Name:OldToyGun_1                    Damage:032   Splash:000  Level:004  
+GunRootType:BasicRifle           GunType:Poison_UnderwaterRifle_01      Name:OldToyGun_1                    Damage:035   Splash:000  Level:005  
+GunRootType:BasicRifle           GunType:Poison_UnderwaterRifle_02      Name:OldToyGun_1                    Damage:027   Splash:000  Level:001  
+GunRootType:BasicRifle           GunType:Poison_UnderwaterRifle_02      Name:OldToyGun_1                    Damage:030   Splash:000  Level:002  
+GunRootType:BasicRifle           GunType:Poison_UnderwaterRifle_02      Name:OldToyGun_1                    Damage:033   Splash:000  Level:003  
+GunRootType:BasicRifle           GunType:Poison_UnderwaterRifle_02      Name:OldToyGun_1                    Damage:036   Splash:000  Level:004  
+GunRootType:BasicRifle           GunType:Poison_UnderwaterRifle_02      Name:OldToyGun_1                    Damage:039   Splash:000  Level:005  
+GunRootType:BasicRifle           GunType:Poison_UnderwaterRifle_03      Name:HellPoison_BasicRifle          Damage:031   Splash:000  Level:001  
+GunRootType:BasicRifle           GunType:Poison_UnderwaterRifle_03      Name:HellPoison_BasicRifle          Damage:034   Splash:000  Level:002  
+GunRootType:BasicRifle           GunType:Poison_UnderwaterRifle_03      Name:HellPoison_BasicRifle          Damage:037   Splash:000  Level:003  
+GunRootType:BasicRifle           GunType:Poison_UnderwaterRifle_03      Name:HellPoison_BasicRifle          Damage:040   Splash:000  Level:004  
+GunRootType:BasicRifle           GunType:Poison_UnderwaterRifle_03      Name:HellPoison_BasicRifle          Damage:043   Splash:000  Level:005  
+GunRootType:BasicRifle           GunType:Sleep_UnderwaterRifle_01       Name:OldToyGun_1                    Damage:030   Splash:000  Level:001  
+GunRootType:BasicRifle           GunType:Sleep_UnderwaterRifle_01       Name:OldToyGun_1                    Damage:040   Splash:000  Level:002  
+GunRootType:BasicRifle           GunType:Sleep_UnderwaterRifle_01       Name:OldToyGun_1                    Damage:050   Splash:000  Level:003  
+GunRootType:BasicRifle           GunType:Sleep_UnderwaterRifle_01       Name:OldToyGun_1                    Damage:060   Splash:000  Level:004  
+GunRootType:BasicRifle           GunType:Sleep_UnderwaterRifle_01       Name:OldToyGun_1                    Damage:080   Splash:000  Level:005  
+GunRootType:BasicRifle           GunType:ThunderStorm_UnderwaterRifle   Name:Item_ThunderBolt_BasicRifle    Damage:041   Splash:000  Level:001  
+GunRootType:BasicRifle           GunType:ThunderStorm_UnderwaterRifle   Name:Item_ThunderBolt_BasicRifle    Damage:042   Splash:000  Level:002  
+GunRootType:BasicRifle           GunType:ThunderStorm_UnderwaterRifle   Name:Item_ThunderBolt_BasicRifle    Damage:044   Splash:000  Level:003  
+GunRootType:BasicRifle           GunType:ThunderStorm_UnderwaterRifle   Name:Item_ThunderBolt_BasicRifle    Damage:046   Splash:000  Level:004  
+GunRootType:BasicRifle           GunType:ThunderStorm_UnderwaterRifle   Name:Item_ThunderBolt_BasicRifle    Damage:049   Splash:000  Level:005  
+GunRootType:BasicRifle           GunType:UnderwaterRifle01              Name:OldToyGun_1                    Damage:035   Splash:000  
+GunRootType:BasicRifle           GunType:UnderwaterRifle01              Name:OldToyGun_1                    Damage:042   Splash:000  
+GunRootType:BasicRifle           GunType:UnderwaterRifle01              Name:OldToyGun_1                    Damage:051   Splash:000  
+GunRootType:BasicRifle           GunType:UnderwaterRifle01              Name:OldToyGun_1                    Damage:061   Splash:000  
+GunRootType:BasicRifle           GunType:UnderwaterRifle01              Name:OldToyGun_1                    Damage:085   Splash:000  
+GunRootType:BasicRifle           GunType:UnderwaterRifle02              Name:OldToyGun_1                    Damage:055   Splash:000  
+GunRootType:BasicRifle           GunType:UnderwaterRifle02              Name:OldToyGun_1                    Damage:062   Splash:000  
+GunRootType:BasicRifle           GunType:UnderwaterRifle02              Name:OldToyGun_1                    Damage:071   Splash:000  
+GunRootType:BasicRifle           GunType:UnderwaterRifle02              Name:OldToyGun_1                    Damage:081   Splash:000  
+GunRootType:BasicRifle           GunType:UnderwaterRifle02              Name:OldToyGun_1                    Damage:105   Splash:000  
+GunRootType:BasicRifle           GunType:UnderwaterRifle03              Name:OldToyGun_1                    Damage:080   Splash:000  Level:001  
+GunRootType:BasicRifle           GunType:UnderwaterRifle03              Name:OldToyGun_1                    Damage:087   Splash:000  Level:001  
+GunRootType:BasicRifle           GunType:UnderwaterRifle03              Name:OldToyGun_1                    Damage:096   Splash:000  Level:001  
+GunRootType:BasicRifle           GunType:UnderwaterRifle03              Name:OldToyGun_1                    Damage:106   Splash:000  Level:001  
+GunRootType:BasicRifle           GunType:UnderwaterRifle03              Name:OldToyGun_1                    Damage:130   Splash:000  Level:001  
+GunRootType:DrainGun             GunType:DrainGun                       Name:DrainGun                       Damage:006   Splash:000  Level:001  
+GunRootType:DrainGun             GunType:DrainGun                       Name:DrainGun                       Damage:008   Splash:000  Level:001  
+GunRootType:DrainGun             GunType:DrainGun                       Name:DrainGun                       Damage:010   Splash:000  Level:001  
+GunRootType:DrainGun             GunType:DrainGun                       Name:DrainGun                       Damage:012   Splash:000  Level:001  
+GunRootType:DrainGun             GunType:DrainGun                       Name:DrainGun                       Damage:014   Splash:000  Level:001  
+GunRootType:DrainGun             GunType:Empowered_DrainGun             Name:DrainGun                       Damage:010   Splash:000  Level:002  
+GunRootType:DrainGun             GunType:Empowered_DrainGun             Name:DrainGun                       Damage:012   Splash:000  Level:002  
+GunRootType:DrainGun             GunType:Empowered_DrainGun             Name:DrainGun                       Damage:014   Splash:000  Level:002  
+GunRootType:DrainGun             GunType:Empowered_DrainGun             Name:DrainGun                       Damage:016   Splash:000  Level:002  
+GunRootType:DrainGun             GunType:Empowered_DrainGun             Name:DrainGun                       Damage:018   Splash:000  Level:002  
+GunRootType:DrainGun             GunType:Power_DrainGun                 Name:DrainGun                       Damage:014   Splash:000  Level:003  
+GunRootType:DrainGun             GunType:Power_DrainGun                 Name:DrainGun                       Damage:016   Splash:000  Level:003  
+GunRootType:DrainGun             GunType:Power_DrainGun                 Name:DrainGun                       Damage:018   Splash:000  Level:003  
+GunRootType:DrainGun             GunType:Power_DrainGun                 Name:DrainGun                       Damage:020   Splash:000  Level:003  
+GunRootType:DrainGun             GunType:Power_DrainGun                 Name:DrainGun                       Damage:022   Splash:000  Level:003  
+GunRootType:GrenadeLauncher      GunType:BlackHole_GrenadeLauncher      Name:GrenadeLauncher                Damage:000   Splash:060  Level:001  
+GunRootType:GrenadeLauncher      GunType:BlackHole_GrenadeLauncher      Name:GrenadeLauncher                Damage:000   Splash:070  Level:002  
+GunRootType:GrenadeLauncher      GunType:BlackHole_GrenadeLauncher      Name:GrenadeLauncher                Damage:000   Splash:082  Level:003  
+GunRootType:GrenadeLauncher      GunType:BlackHole_GrenadeLauncher      Name:GrenadeLauncher                Damage:000   Splash:094  Level:004  
+GunRootType:GrenadeLauncher      GunType:BlackHole_GrenadeLauncher      Name:GrenadeLauncher                Damage:000   Splash:106  Level:005  
+GunRootType:GrenadeLauncher      GunType:GrenadeLauncher                Name:                               Damage:000   Splash:020  
+GunRootType:GrenadeLauncher      GunType:GrenadeLauncher                Name:GrenadeLauncher                Damage:000   Splash:030  
+GunRootType:GrenadeLauncher      GunType:GrenadeLauncher                Name:GrenadeLauncher                Damage:000   Splash:037  
+GunRootType:GrenadeLauncher      GunType:GrenadeLauncher                Name:GrenadeLauncher                Damage:000   Splash:046  
+GunRootType:GrenadeLauncher      GunType:GrenadeLauncher                Name:GrenadeLauncher                Damage:000   Splash:056  
+GunRootType:GrenadeLauncher      GunType:GrenadeLauncher                Name:GrenadeLauncher                Damage:000   Splash:070  
+GunRootType:GrenadeLauncher      GunType:GrenadeLauncher01              Name:GrenadeLauncher                Damage:000   Splash:042  
+GunRootType:GrenadeLauncher      GunType:GrenadeLauncher01              Name:GrenadeLauncher                Damage:000   Splash:050  
+GunRootType:GrenadeLauncher      GunType:GrenadeLauncher01              Name:GrenadeLauncher                Damage:000   Splash:060  
+GunRootType:GrenadeLauncher      GunType:GrenadeLauncher01              Name:GrenadeLauncher                Damage:000   Splash:072  
+GunRootType:GrenadeLauncher      GunType:GrenadeLauncher01              Name:GrenadeLauncher                Damage:000   Splash:085  
+GunRootType:GrenadeLauncher      GunType:GrenadeLauncher02              Name:GrenadeLauncher                Damage:000   Splash:060  
+GunRootType:GrenadeLauncher      GunType:GrenadeLauncher02              Name:GrenadeLauncher                Damage:000   Splash:068  
+GunRootType:GrenadeLauncher      GunType:GrenadeLauncher02              Name:GrenadeLauncher                Damage:000   Splash:078  
+GunRootType:GrenadeLauncher      GunType:GrenadeLauncher02              Name:GrenadeLauncher                Damage:000   Splash:090  
+GunRootType:GrenadeLauncher      GunType:GrenadeLauncher02              Name:GrenadeLauncher                Damage:000   Splash:105  
+GunRootType:GrenadeLauncher      GunType:Magnetic_GrenadeLauncher01     Name:GrenadeLauncher                Damage:000   Splash:058  
+GunRootType:GrenadeLauncher      GunType:Magnetic_GrenadeLauncher01     Name:GrenadeLauncher                Damage:000   Splash:070  
+GunRootType:GrenadeLauncher      GunType:Magnetic_GrenadeLauncher01     Name:GrenadeLauncher                Damage:000   Splash:082  
+GunRootType:GrenadeLauncher      GunType:Magnetic_GrenadeLauncher01     Name:GrenadeLauncher                Damage:000   Splash:094  
+GunRootType:GrenadeLauncher      GunType:Magnetic_GrenadeLauncher01     Name:GrenadeLauncher                Damage:000   Splash:106  
+GunRootType:GrenadeLauncher      GunType:Paralysis_GrenadeLauncher01    Name:GrenadeLauncher                Damage:000   Splash:055  Level:001  
+GunRootType:GrenadeLauncher      GunType:Paralysis_GrenadeLauncher01    Name:GrenadeLauncher                Damage:000   Splash:066  Level:002  
+GunRootType:GrenadeLauncher      GunType:Paralysis_GrenadeLauncher01    Name:GrenadeLauncher                Damage:000   Splash:078  Level:003  
+GunRootType:GrenadeLauncher      GunType:Paralysis_GrenadeLauncher01    Name:GrenadeLauncher                Damage:000   Splash:090  Level:004  
+GunRootType:GrenadeLauncher      GunType:Paralysis_GrenadeLauncher01    Name:GrenadeLauncher                Damage:000   Splash:103  Level:005  
+GunRootType:GrenadeLauncher      GunType:PoisonLauncher                 Name:PoisonLauncher_1               Damage:000   Splash:000  Level:001  
+GunRootType:GrenadeLauncher      GunType:PoisonLauncher                 Name:PoisonLauncher_2               Damage:000   Splash:000  Level:002  
+GunRootType:GrenadeLauncher      GunType:PoisonLauncher                 Name:PoisonLauncher_3               Damage:000   Splash:000  Level:003  
+GunRootType:GrenadeLauncher      GunType:PoisonLauncher                 Name:PoisonLauncher_4               Damage:000   Splash:000  Level:004  
+GunRootType:GrenadeLauncher      GunType:PoisonLauncher                 Name:PoisonLauncher_5               Damage:000   Splash:000  Level:005  
+GunRootType:GrenadeLauncher      GunType:Sleep_GrenadeLauncher01        Name:GrenadeLauncher                Damage:000   Splash:000  Level:001  
+GunRootType:GrenadeLauncher      GunType:Sleep_GrenadeLauncher01        Name:GrenadeLauncher                Damage:000   Splash:000  Level:002  
+GunRootType:GrenadeLauncher      GunType:Sleep_GrenadeLauncher01        Name:GrenadeLauncher                Damage:000   Splash:000  Level:003  
+GunRootType:GrenadeLauncher      GunType:Sleep_GrenadeLauncher01        Name:GrenadeLauncher                Damage:000   Splash:000  Level:004  
+GunRootType:GrenadeLauncher      GunType:Sleep_GrenadeLauncher01        Name:GrenadeLauncher                Damage:000   Splash:000  Level:005  
+GunRootType:IceGun               GunType:IceGun                         Name:IceGun                         Damage:000   Splash:000  Level:001  
+GunRootType:IceGun               GunType:IceGun                         Name:IceGun                         Damage:000   Splash:000  Level:002  
+GunRootType:IceGun               GunType:IceGun                         Name:IceGun                         Damage:000   Splash:000  Level:003  
+GunRootType:IceGun               GunType:IceGun                         Name:IceGun                         Damage:000   Splash:000  Level:004  
+GunRootType:IceGun               GunType:IceGun                         Name:IceGun                         Damage:000   Splash:000  Level:005  
+GunRootType:IceGun               GunType:IceGun_Black                   Name:IceGun                         Damage:000   Splash:000  Level:001  
+GunRootType:IceGun               GunType:IceGun_Black                   Name:IceGun                         Damage:000   Splash:000  Level:002  
+GunRootType:IceGun               GunType:IceGun_Black                   Name:IceGun                         Damage:000   Splash:000  Level:003  
+GunRootType:IceGun               GunType:IceGun_Black                   Name:IceGun                         Damage:000   Splash:000  Level:004  
+GunRootType:IceGun               GunType:IceGun_Black                   Name:IceGun                         Damage:000   Splash:000  Level:005  
+GunRootType:IceGun               GunType:IceGun_Empowered               Name:IceGun                         Damage:000   Splash:000  Level:001  
+GunRootType:IceGun               GunType:IceGun_Empowered               Name:IceGun                         Damage:000   Splash:000  Level:002  
+GunRootType:IceGun               GunType:IceGun_Empowered               Name:IceGun                         Damage:000   Splash:000  Level:003  
+GunRootType:IceGun               GunType:IceGun_Empowered               Name:IceGun                         Damage:000   Splash:000  Level:004  
+GunRootType:IceGun               GunType:IceGun_Empowered               Name:IceGun                         Damage:000   Splash:000  Level:005  
+GunRootType:NetGun               GunType:L_NetGun                       Name:NetGun                         Damage:000   Splash:000  
+GunRootType:NetGun               GunType:L_NetGun                       Name:NetGun                         Damage:000   Splash:000  
+GunRootType:NetGun               GunType:L_NetGun                       Name:NetGun                         Damage:000   Splash:000  
+GunRootType:NetGun               GunType:L_NetGun                       Name:NetGun                         Damage:000   Splash:000  
+GunRootType:NetGun               GunType:L_NetGun                       Name:NetGun                         Damage:000   Splash:000  
+GunRootType:NetGun               GunType:M_NetGun                       Name:NetGun                         Damage:000   Splash:000  
+GunRootType:NetGun               GunType:M_NetGun                       Name:NetGun                         Damage:000   Splash:000  
+GunRootType:NetGun               GunType:M_NetGun                       Name:NetGun                         Damage:000   Splash:000  
+GunRootType:NetGun               GunType:M_NetGun                       Name:NetGun                         Damage:000   Splash:000  
+GunRootType:NetGun               GunType:M_NetGun                       Name:NetGun                         Damage:000   Splash:000  
+GunRootType:NetGun               GunType:NetGun                         Name:NetGun                         Damage:000   Splash:000  
+GunRootType:NetGun               GunType:NetGun                         Name:NetGun                         Damage:000   Splash:000  
+GunRootType:NetGun               GunType:NetGun                         Name:NetGun                         Damage:000   Splash:000  
+GunRootType:NetGun               GunType:NetGun                         Name:NetGun                         Damage:000   Splash:000  
+GunRootType:NetGun               GunType:NetGun                         Name:NetGun                         Damage:000   Splash:000  
+GunRootType:NetGun               GunType:Steel_NetGun                   Name:NetGun                         Damage:000   Splash:000  
+GunRootType:NetGun               GunType:Steel_NetGun                   Name:NetGun                         Damage:000   Splash:000  
+GunRootType:NetGun               GunType:Steel_NetGun                   Name:NetGun                         Damage:000   Splash:000  
+GunRootType:NetGun               GunType:Steel_NetGun                   Name:NetGun                         Damage:000   Splash:000  
+GunRootType:NetGun               GunType:Steel_NetGun                   Name:NetGun                         Damage:000   Splash:000  
+GunRootType:ShotGun              GunType:Chain_ShotGun01                Name:VolleyJet_1                    Damage:013   Splash:000  Level:001  
+GunRootType:ShotGun              GunType:Chain_ShotGun01                Name:VolleyJet_1                    Damage:014   Splash:000  Level:002  
+GunRootType:ShotGun              GunType:Chain_ShotGun01                Name:VolleyJet_1                    Damage:015   Splash:000  Level:003  
+GunRootType:ShotGun              GunType:Chain_ShotGun01                Name:VolleyJet_1                    Damage:017   Splash:000  Level:004  
+GunRootType:ShotGun              GunType:Chain_ShotGun01                Name:VolleyJet_1                    Damage:019   Splash:000  Level:005  
+GunRootType:ShotGun              GunType:CincoShotGun01                 Name:VolleyJet_1                    Damage:022   Splash:000  
+GunRootType:ShotGun              GunType:CincoShotGun01                 Name:VolleyJet_1                    Damage:024   Splash:000  
+GunRootType:ShotGun              GunType:CincoShotGun01                 Name:VolleyJet_1                    Damage:027   Splash:000  
+GunRootType:ShotGun              GunType:CincoShotGun01                 Name:VolleyJet_1                    Damage:031   Splash:000  
+GunRootType:ShotGun              GunType:CincoShotGun01                 Name:VolleyJet_1                    Damage:035   Splash:000  
+GunRootType:ShotGun              GunType:Fire_TripleAxel01              Name:VolleyJet_1                    Damage:014   Splash:000  Level:001  
+GunRootType:ShotGun              GunType:Fire_TripleAxel01              Name:VolleyJet_1                    Damage:016   Splash:000  Level:002  
+GunRootType:ShotGun              GunType:Fire_TripleAxel01              Name:VolleyJet_1                    Damage:018   Splash:000  Level:003  
+GunRootType:ShotGun              GunType:Fire_TripleAxel01              Name:VolleyJet_1                    Damage:020   Splash:000  Level:004  
+GunRootType:ShotGun              GunType:Fire_TripleAxel01              Name:VolleyJet_1                    Damage:022   Splash:000  Level:005  
+GunRootType:ShotGun              GunType:Fire_TripleAxel02              Name:VolleyJet_1                    Damage:016   Splash:000  Level:006  
+GunRootType:ShotGun              GunType:Fire_TripleAxel02              Name:VolleyJet_1                    Damage:017   Splash:000  Level:007  
+GunRootType:ShotGun              GunType:Fire_TripleAxel02              Name:VolleyJet_1                    Damage:019   Splash:000  Level:008  
+GunRootType:ShotGun              GunType:Fire_TripleAxel02              Name:VolleyJet_1                    Damage:021   Splash:000  Level:009  
+GunRootType:ShotGun              GunType:Fire_TripleAxel02              Name:VolleyJet_1                    Damage:023   Splash:000  Level:010  
+GunRootType:ShotGun              GunType:FireWork_ShotGun               Name:VolleyJet_1                    Damage:019   Splash:000  Level:001  
+GunRootType:ShotGun              GunType:FireWork_ShotGun               Name:VolleyJet_1                    Damage:020   Splash:000  Level:002  
+GunRootType:ShotGun              GunType:FireWork_ShotGun               Name:VolleyJet_1                    Damage:022   Splash:000  Level:003  
+GunRootType:ShotGun              GunType:FireWork_ShotGun               Name:VolleyJet_1                    Damage:024   Splash:000  Level:004  
+GunRootType:ShotGun              GunType:FireWork_ShotGun               Name:VolleyJet_1                    Damage:027   Splash:000  Level:005  
+GunRootType:ShotGun              GunType:HellPoison_ShotGun             Name:VolleyJet_1                    Damage:018   Splash:000  Level:001  
+GunRootType:ShotGun              GunType:HellPoison_ShotGun             Name:VolleyJet_1                    Damage:020   Splash:000  Level:002  
+GunRootType:ShotGun              GunType:HellPoison_ShotGun             Name:VolleyJet_1                    Damage:022   Splash:000  Level:003  
+GunRootType:ShotGun              GunType:HellPoison_ShotGun             Name:VolleyJet_1                    Damage:025   Splash:000  Level:004  
+GunRootType:ShotGun              GunType:HellPoison_ShotGun             Name:VolleyJet_1                    Damage:028   Splash:000  Level:005  
+GunRootType:ShotGun              GunType:Paralysis_ShotGun01            Name:VolleyJet_1                    Damage:018   Splash:000  Level:001  
+GunRootType:ShotGun              GunType:Paralysis_ShotGun01            Name:VolleyJet_1                    Damage:022   Splash:000  Level:002  
+GunRootType:ShotGun              GunType:Paralysis_ShotGun01            Name:VolleyJet_1                    Damage:026   Splash:000  Level:003  
+GunRootType:ShotGun              GunType:Paralysis_ShotGun01            Name:VolleyJet_1                    Damage:031   Splash:000  Level:004  
+GunRootType:ShotGun              GunType:Paralysis_ShotGun01            Name:VolleyJet_1                    Damage:037   Splash:000  Level:005  
+GunRootType:ShotGun              GunType:Paralysis_ShotGun02            Name:VolleyJet_1                    Damage:025   Splash:000  Level:001  
+GunRootType:ShotGun              GunType:Paralysis_ShotGun02            Name:VolleyJet_1                    Damage:028   Splash:000  Level:002  
+GunRootType:ShotGun              GunType:Paralysis_ShotGun02            Name:VolleyJet_1                    Damage:032   Splash:000  Level:003  
+GunRootType:ShotGun              GunType:Paralysis_ShotGun02            Name:VolleyJet_1                    Damage:037   Splash:000  Level:004  
+GunRootType:ShotGun              GunType:Paralysis_ShotGun02            Name:VolleyJet_1                    Damage:043   Splash:000  Level:005  
+GunRootType:ShotGun              GunType:Poison_ShotGun01               Name:VolleyJet_1                    Damage:014   Splash:000  Level:001  
+GunRootType:ShotGun              GunType:Poison_ShotGun01               Name:VolleyJet_1                    Damage:015   Splash:000  Level:002  
+GunRootType:ShotGun              GunType:Poison_ShotGun01               Name:VolleyJet_1                    Damage:016   Splash:000  Level:003  
+GunRootType:ShotGun              GunType:Poison_ShotGun01               Name:VolleyJet_1                    Damage:018   Splash:000  Level:004  
+GunRootType:ShotGun              GunType:Poison_ShotGun01               Name:VolleyJet_1                    Damage:021   Splash:000  Level:005  
+GunRootType:ShotGun              GunType:Poison_ShotGun02               Name:VolleyJet_1                    Damage:016   Splash:000  Level:001  
+GunRootType:ShotGun              GunType:Poison_ShotGun02               Name:VolleyJet_1                    Damage:017   Splash:000  Level:002  
+GunRootType:ShotGun              GunType:Poison_ShotGun02               Name:VolleyJet_1                    Damage:018   Splash:000  Level:003  
+GunRootType:ShotGun              GunType:Poison_ShotGun02               Name:VolleyJet_1                    Damage:020   Splash:000  Level:004  
+GunRootType:ShotGun              GunType:Poison_ShotGun02               Name:VolleyJet_1                    Damage:023   Splash:000  Level:005  
+GunRootType:ShotGun              GunType:QuatroShotGun                  Name:VolleyJet_1                    Damage:014   Splash:000  
+GunRootType:ShotGun              GunType:QuatroShotGun                  Name:VolleyJet_1                    Damage:017   Splash:000  
+GunRootType:ShotGun              GunType:QuatroShotGun                  Name:VolleyJet_1                    Damage:021   Splash:000  
+GunRootType:ShotGun              GunType:QuatroShotGun                  Name:VolleyJet_1                    Damage:025   Splash:000  
+GunRootType:ShotGun              GunType:QuatroShotGun                  Name:VolleyJet_1                    Damage:030   Splash:000  
+GunRootType:ShotGun              GunType:QuatroShotGun02                Name:VolleyJet_1                    Damage:019   Splash:000  
+GunRootType:ShotGun              GunType:QuatroShotGun02                Name:VolleyJet_1                    Damage:022   Splash:000  
+GunRootType:ShotGun              GunType:QuatroShotGun02                Name:VolleyJet_1                    Damage:026   Splash:000  
+GunRootType:ShotGun              GunType:QuatroShotGun02                Name:VolleyJet_1                    Damage:030   Splash:000  
+GunRootType:ShotGun              GunType:QuatroShotGun02                Name:VolleyJet_1                    Damage:035   Splash:000  
+GunRootType:ShotGun              GunType:ShotGun                        Name:VolleyJet_1                    Damage:012   Splash:000  
+GunRootType:ShotGun              GunType:ShotGun                        Name:VolleyJet_2                    Damage:015   Splash:000  
+GunRootType:ShotGun              GunType:ShotGun                        Name:VolleyJet_3                    Damage:019   Splash:000  
+GunRootType:ShotGun              GunType:ShotGun                        Name:VolleyJet_4                    Damage:024   Splash:000  
+GunRootType:ShotGun              GunType:ShotGun                        Name:VolleyJet_5                    Damage:029   Splash:000  
+GunRootType:ShotGun              GunType:Sleep_TripleAxel01             Name:VolleyJet_1                    Damage:016   Splash:000  Level:001  
+GunRootType:ShotGun              GunType:Sleep_TripleAxel01             Name:VolleyJet_1                    Damage:020   Splash:000  Level:002  
+GunRootType:ShotGun              GunType:Sleep_TripleAxel01             Name:VolleyJet_1                    Damage:024   Splash:000  Level:003  
+GunRootType:ShotGun              GunType:Sleep_TripleAxel01             Name:VolleyJet_1                    Damage:028   Splash:000  Level:004  
+GunRootType:ShotGun              GunType:Sleep_TripleAxel01             Name:VolleyJet_1                    Damage:032   Splash:000  Level:005  
+GunRootType:ShotGun              GunType:ThumderBolt_ShotGun            Name:VolleyJet_1                    Damage:019   Splash:000  Level:001  
+GunRootType:ShotGun              GunType:ThumderBolt_ShotGun            Name:VolleyJet_1                    Damage:020   Splash:000  Level:002  
+GunRootType:ShotGun              GunType:ThumderBolt_ShotGun            Name:VolleyJet_1                    Damage:021   Splash:000  Level:003  
+GunRootType:ShotGun              GunType:ThumderBolt_ShotGun            Name:VolleyJet_1                    Damage:022   Splash:000  Level:004  
+GunRootType:ShotGun              GunType:ThumderBolt_ShotGun            Name:VolleyJet_1                    Damage:023   Splash:000  Level:005  
+GunRootType:SleepGun             GunType:Quick_SleepGun01               Name:TranquilizerGun_1              Damage:000   Splash:000  Level:011  
+GunRootType:SleepGun             GunType:Quick_SleepGun01               Name:TranquilizerGun_1              Damage:000   Splash:000  Level:012  
+GunRootType:SleepGun             GunType:Quick_SleepGun01               Name:TranquilizerGun_1              Damage:000   Splash:000  Level:013  
+GunRootType:SleepGun             GunType:Quick_SleepGun01               Name:TranquilizerGun_1              Damage:000   Splash:000  Level:014  
+GunRootType:SleepGun             GunType:Quick_SleepGun01               Name:TranquilizerGun_1              Damage:000   Splash:000  Level:015  
+GunRootType:SleepGun             GunType:SleepGun                       Name:TranquilizerGun_1              Damage:000   Splash:000  Level:003  
+GunRootType:SleepGun             GunType:SleepGun                       Name:TranquilizerGun_2              Damage:000   Splash:000  Level:004  
+GunRootType:SleepGun             GunType:SleepGun                       Name:TranquilizerGun_3              Damage:000   Splash:000  Level:005  
+GunRootType:SleepGun             GunType:SleepGun                       Name:TranquilizerGun_4              Damage:000   Splash:000  Level:006  
+GunRootType:SleepGun             GunType:SleepGun                       Name:TranquilizerGun_5              Damage:000   Splash:000  Level:007  
+GunRootType:SleepGun             GunType:SleepGun01                     Name:TranquilizerGun_1              Damage:000   Splash:000  Level:005  
+GunRootType:SleepGun             GunType:SleepGun01                     Name:TranquilizerGun_2              Damage:000   Splash:000  Level:006  
+GunRootType:SleepGun             GunType:SleepGun01                     Name:TranquilizerGun_3              Damage:000   Splash:000  Level:007  
+GunRootType:SleepGun             GunType:SleepGun01                     Name:TranquilizerGun_4              Damage:000   Splash:000  Level:008  
+GunRootType:SleepGun             GunType:SleepGun01                     Name:TranquilizerGun_5              Damage:000   Splash:000  Level:009  
+GunRootType:SleepGun             GunType:SleepGun02                     Name:TranquilizerGun_1              Damage:000   Splash:000  Level:006  
+GunRootType:SleepGun             GunType:SleepGun02                     Name:TranquilizerGun_2              Damage:000   Splash:000  Level:007  
+GunRootType:SleepGun             GunType:SleepGun02                     Name:TranquilizerGun_3              Damage:000   Splash:000  Level:008  
+GunRootType:SleepGun             GunType:SleepGun02                     Name:TranquilizerGun_4              Damage:000   Splash:000  Level:009  
+GunRootType:SleepGun             GunType:SleepGun02                     Name:TranquilizerGun_5              Damage:000   Splash:000  Level:010  
+GunRootType:SniperGun            GunType:Chain_SniperGun01              Name:RedSniperGun_1                 Damage:033   Splash:000  Level:001  
+GunRootType:SniperGun            GunType:Chain_SniperGun01              Name:RedSniperGun_1                 Damage:035   Splash:000  Level:002  
+GunRootType:SniperGun            GunType:Chain_SniperGun01              Name:RedSniperGun_1                 Damage:038   Splash:000  Level:003  
+GunRootType:SniperGun            GunType:Chain_SniperGun01              Name:RedSniperGun_1                 Damage:042   Splash:000  Level:004  
+GunRootType:SniperGun            GunType:Chain_SniperGun01              Name:RedSniperGun_1                 Damage:046   Splash:000  Level:005  
+GunRootType:SniperGun            GunType:Chain_SniperGun02              Name:RedSniperGun_1                 Damage:038   Splash:000  Level:001  
+GunRootType:SniperGun            GunType:Chain_SniperGun02              Name:RedSniperGun_1                 Damage:040   Splash:000  Level:002  
+GunRootType:SniperGun            GunType:Chain_SniperGun02              Name:RedSniperGun_1                 Damage:042   Splash:000  Level:003  
+GunRootType:SniperGun            GunType:Chain_SniperGun02              Name:RedSniperGun_1                 Damage:044   Splash:000  Level:004  
+GunRootType:SniperGun            GunType:Chain_SniperGun02              Name:RedSniperGun_1                 Damage:046   Splash:000  Level:005  
+GunRootType:SniperGun            GunType:DeathSniper                    Name:DeathSniper_1                  Damage:092   Splash:000  Level:001  
+GunRootType:SniperGun            GunType:DeathSniper                    Name:DeathSniper_2                  Damage:098   Splash:000  Level:001  
+GunRootType:SniperGun            GunType:DeathSniper                    Name:DeathSniper_3                  Damage:107   Splash:000  Level:001  
+GunRootType:SniperGun            GunType:DeathSniper                    Name:DeathSniper_4                  Damage:117   Splash:000  Level:001  
+GunRootType:SniperGun            GunType:DeathSniper                    Name:DeathSniper_5                  Damage:140   Splash:000  Level:001  
+GunRootType:SniperGun            GunType:Fire_SniperGun01               Name:RedSniperGun_1                 Damage:037   Splash:000  Level:001  
+GunRootType:SniperGun            GunType:Fire_SniperGun01               Name:RedSniperGun_1                 Damage:039   Splash:000  Level:002  
+GunRootType:SniperGun            GunType:Fire_SniperGun01               Name:RedSniperGun_1                 Damage:043   Splash:000  Level:003  
+GunRootType:SniperGun            GunType:Fire_SniperGun01               Name:RedSniperGun_1                 Damage:048   Splash:000  Level:004  
+GunRootType:SniperGun            GunType:Fire_SniperGun01               Name:RedSniperGun_1                 Damage:055   Splash:000  Level:005  
+GunRootType:SniperGun            GunType:Fire_SniperGun02               Name:RedSniperGun_1                 Damage:040   Splash:000  Level:006  
+GunRootType:SniperGun            GunType:Fire_SniperGun02               Name:RedSniperGun_1                 Damage:043   Splash:000  Level:007  
+GunRootType:SniperGun            GunType:Fire_SniperGun02               Name:RedSniperGun_1                 Damage:046   Splash:000  Level:008  
+GunRootType:SniperGun            GunType:Fire_SniperGun02               Name:RedSniperGun_1                 Damage:051   Splash:000  Level:009  
+GunRootType:SniperGun            GunType:Fire_SniperGun02               Name:RedSniperGun_1                 Damage:058   Splash:000  Level:010  
+GunRootType:SniperGun            GunType:FireWork_Sniper                Name:RedSniperGun_1                 Damage:051   Splash:000  Level:001  
+GunRootType:SniperGun            GunType:FireWork_Sniper                Name:RedSniperGun_1                 Damage:055   Splash:000  Level:002  
+GunRootType:SniperGun            GunType:FireWork_Sniper                Name:RedSniperGun_1                 Damage:059   Splash:000  Level:003  
+GunRootType:SniperGun            GunType:FireWork_Sniper                Name:RedSniperGun_1                 Damage:063   Splash:000  Level:004  
+GunRootType:SniperGun            GunType:FireWork_Sniper                Name:RedSniperGun_1                 Damage:067   Splash:000  Level:005  
+GunRootType:SniperGun            GunType:HellPoison_Sniper              Name:RedSniperGun_1                 Damage:050   Splash:000  Level:001  
+GunRootType:SniperGun            GunType:HellPoison_Sniper              Name:RedSniperGun_1                 Damage:052   Splash:000  Level:002  
+GunRootType:SniperGun            GunType:HellPoison_Sniper              Name:RedSniperGun_1                 Damage:054   Splash:000  Level:003  
+GunRootType:SniperGun            GunType:HellPoison_Sniper              Name:RedSniperGun_1                 Damage:057   Splash:000  Level:004  
+GunRootType:SniperGun            GunType:HellPoison_Sniper              Name:RedSniperGun_1                 Damage:065   Splash:000  Level:005  
+GunRootType:SniperGun            GunType:Paralysis_SniperGun01          Name:RedSniperGun_1                 Damage:045   Splash:000  Level:001  
+GunRootType:SniperGun            GunType:Paralysis_SniperGun01          Name:RedSniperGun_1                 Damage:051   Splash:000  Level:002  
+GunRootType:SniperGun            GunType:Paralysis_SniperGun01          Name:RedSniperGun_1                 Damage:060   Splash:000  Level:003  
+GunRootType:SniperGun            GunType:Paralysis_SniperGun01          Name:RedSniperGun_1                 Damage:070   Splash:000  Level:004  
+GunRootType:SniperGun            GunType:Paralysis_SniperGun01          Name:RedSniperGun_1                 Damage:095   Splash:000  Level:005  
+GunRootType:SniperGun            GunType:Paralysis_SniperGun02          Name:RedSniperGun_1                 Damage:065   Splash:000  Level:001  
+GunRootType:SniperGun            GunType:Paralysis_SniperGun02          Name:RedSniperGun_1                 Damage:071   Splash:000  Level:002  
+GunRootType:SniperGun            GunType:Paralysis_SniperGun02          Name:RedSniperGun_1                 Damage:080   Splash:000  Level:003  
+GunRootType:SniperGun            GunType:Paralysis_SniperGun02          Name:RedSniperGun_1                 Damage:090   Splash:000  Level:004  
+GunRootType:SniperGun            GunType:Paralysis_SniperGun02          Name:RedSniperGun_1                 Damage:115   Splash:000  Level:005  
+GunRootType:SniperGun            GunType:Poison_SniperGun01             Name:RedSniperGun_1                 Damage:040   Splash:000  Level:001  
+GunRootType:SniperGun            GunType:Poison_SniperGun01             Name:RedSniperGun_1                 Damage:042   Splash:000  Level:002  
+GunRootType:SniperGun            GunType:Poison_SniperGun01             Name:RedSniperGun_1                 Damage:044   Splash:000  Level:003  
+GunRootType:SniperGun            GunType:Poison_SniperGun01             Name:RedSniperGun_1                 Damage:046   Splash:000  Level:004  
+GunRootType:SniperGun            GunType:Poison_SniperGun01             Name:RedSniperGun_1                 Damage:048   Splash:000  Level:005  
+GunRootType:SniperGun            GunType:Poison_SniperGun02             Name:RedSniperGun_1                 Damage:045   Splash:000  Level:001  
+GunRootType:SniperGun            GunType:Poison_SniperGun02             Name:RedSniperGun_1                 Damage:047   Splash:000  Level:002  
+GunRootType:SniperGun            GunType:Poison_SniperGun02             Name:RedSniperGun_1                 Damage:049   Splash:000  Level:003  
+GunRootType:SniperGun            GunType:Poison_SniperGun02             Name:RedSniperGun_1                 Damage:051   Splash:000  Level:004  
+GunRootType:SniperGun            GunType:Poison_SniperGun02             Name:RedSniperGun_1                 Damage:053   Splash:000  Level:005  
+GunRootType:SniperGun            GunType:RedSniper01                    Name:RedSniperGun_1                 Damage:047   Splash:000  
+GunRootType:SniperGun            GunType:RedSniper01                    Name:RedSniperGun_1                 Damage:053   Splash:000  
+GunRootType:SniperGun            GunType:RedSniper01                    Name:RedSniperGun_1                 Damage:062   Splash:000  
+GunRootType:SniperGun            GunType:RedSniper01                    Name:RedSniperGun_1                 Damage:072   Splash:000  
+GunRootType:SniperGun            GunType:RedSniper01                    Name:RedSniperGun_1                 Damage:097   Splash:000  
+GunRootType:SniperGun            GunType:RedSniper02                    Name:RedSniperGun_1                 Damage:067   Splash:000  
+GunRootType:SniperGun            GunType:RedSniper02                    Name:RedSniperGun_1                 Damage:073   Splash:000  
+GunRootType:SniperGun            GunType:RedSniper02                    Name:RedSniperGun_1                 Damage:082   Splash:000  
+GunRootType:SniperGun            GunType:RedSniper02                    Name:RedSniperGun_1                 Damage:092   Splash:000  
+GunRootType:SniperGun            GunType:RedSniper02                    Name:RedSniperGun_1                 Damage:117   Splash:000  
+GunRootType:SniperGun            GunType:Sleep_SniperGun01              Name:RedSniperGun_1                 Damage:040   Splash:000  Level:001  
+GunRootType:SniperGun            GunType:Sleep_SniperGun01              Name:RedSniperGun_1                 Damage:045   Splash:000  Level:001  
+GunRootType:SniperGun            GunType:Sleep_SniperGun01              Name:RedSniperGun_1                 Damage:053   Splash:000  Level:001  
+GunRootType:SniperGun            GunType:Sleep_SniperGun01              Name:RedSniperGun_1                 Damage:065   Splash:000  Level:001  
+GunRootType:SniperGun            GunType:Sleep_SniperGun01              Name:RedSniperGun_1                 Damage:086   Splash:000  Level:001  
+GunRootType:SniperGun            GunType:SniperGun                      Name:RedSniperGun_1                 Damage:032   Splash:000  
+GunRootType:SniperGun            GunType:SniperGun                      Name:RedSniperGun_2                 Damage:038   Splash:000  
+GunRootType:SniperGun            GunType:SniperGun                      Name:RedSniperGun_3                 Damage:047   Splash:000  
+GunRootType:SniperGun            GunType:SniperGun                      Name:RedSniperGun_4                 Damage:057   Splash:000  
+GunRootType:SniperGun            GunType:SniperGun                      Name:RedSniperGun_5                 Damage:074   Splash:000  
+GunRootType:SniperGun            GunType:ThunderBolt_Sniper             Name:RedSniperGun_1                 Damage:050   Splash:000  Level:001  
+GunRootType:SniperGun            GunType:ThunderBolt_Sniper             Name:RedSniperGun_1                 Damage:052   Splash:000  Level:002  
+GunRootType:SniperGun            GunType:ThunderBolt_Sniper             Name:RedSniperGun_1                 Damage:054   Splash:000  Level:003  
+GunRootType:SniperGun            GunType:ThunderBolt_Sniper             Name:RedSniperGun_1                 Damage:056   Splash:000  Level:004  
+GunRootType:SniperGun            GunType:ThunderBolt_Sniper             Name:RedSniperGun_1                 Damage:058   Splash:000  Level:005  
+GunRootType:StickyBombGun        GunType:Chain_StickyBombGun01          Name:StickyBombGun                  Damage:000   Splash:028  Level:001  
+GunRootType:StickyBombGun        GunType:Chain_StickyBombGun01          Name:StickyBombGun                  Damage:000   Splash:032  Level:002  
+GunRootType:StickyBombGun        GunType:Chain_StickyBombGun01          Name:StickyBombGun                  Damage:000   Splash:036  Level:003  
+GunRootType:StickyBombGun        GunType:Chain_StickyBombGun01          Name:StickyBombGun                  Damage:000   Splash:040  Level:004  
+GunRootType:StickyBombGun        GunType:Chain_StickyBombGun01          Name:StickyBombGun                  Damage:000   Splash:045  Level:005  
+GunRootType:StickyBombGun        GunType:Chain_StickyBombGun02          Name:StickyBombGun                  Damage:000   Splash:033  Level:001  
+GunRootType:StickyBombGun        GunType:Chain_StickyBombGun02          Name:StickyBombGun                  Damage:000   Splash:035  Level:002  
+GunRootType:StickyBombGun        GunType:Chain_StickyBombGun02          Name:StickyBombGun                  Damage:000   Splash:037  Level:003  
+GunRootType:StickyBombGun        GunType:Chain_StickyBombGun02          Name:StickyBombGun                  Damage:000   Splash:040  Level:004  
+GunRootType:StickyBombGun        GunType:Chain_StickyBombGun02          Name:StickyBombGun                  Damage:000   Splash:043  Level:005  
+GunRootType:StickyBombGun        GunType:MineBombGun                    Name:MineBombGun_1                  Damage:000   Splash:014  
+GunRootType:StickyBombGun        GunType:MineBombGun                    Name:MineBombGun_2                  Damage:000   Splash:017  
+GunRootType:StickyBombGun        GunType:MineBombGun                    Name:MineBombGun_3                  Damage:000   Splash:020  
+GunRootType:StickyBombGun        GunType:MineBombGun                    Name:MineBombGun_4                  Damage:000   Splash:024  
+GunRootType:StickyBombGun        GunType:MineBombGun                    Name:MineBombGun_5                  Damage:000   Splash:029  
+GunRootType:StickyBombGun        GunType:MineBombGun02                  Name:MineBombGun_1                  Damage:000   Splash:020  
+GunRootType:StickyBombGun        GunType:MineBombGun02                  Name:MineBombGun_2                  Damage:000   Splash:023  
+GunRootType:StickyBombGun        GunType:MineBombGun02                  Name:MineBombGun_3                  Damage:000   Splash:027  
+GunRootType:StickyBombGun        GunType:MineBombGun02                  Name:MineBombGun_4                  Damage:000   Splash:032  
+GunRootType:StickyBombGun        GunType:MineBombGun02                  Name:MineBombGun_5                  Damage:000   Splash:037  
+GunRootType:StickyBombGun        GunType:Paralysis_StickyBombGun01      Name:StickyBombGun                  Damage:000   Splash:035  Level:001  
+GunRootType:StickyBombGun        GunType:Paralysis_StickyBombGun01      Name:StickyBombGun                  Damage:000   Splash:045  Level:002  
+GunRootType:StickyBombGun        GunType:Paralysis_StickyBombGun01      Name:StickyBombGun                  Damage:000   Splash:057  Level:003  
+GunRootType:StickyBombGun        GunType:Paralysis_StickyBombGun01      Name:StickyBombGun                  Damage:000   Splash:070  Level:004  
+GunRootType:StickyBombGun        GunType:Paralysis_StickyBombGun01      Name:StickyBombGun                  Damage:000   Splash:085  Level:005  
+GunRootType:StickyBombGun        GunType:Paralysis_StickyBombGun02      Name:StickyBombGun                  Damage:000   Splash:055  Level:001  
+GunRootType:StickyBombGun        GunType:Paralysis_StickyBombGun02      Name:StickyBombGun                  Damage:000   Splash:066  Level:002  
+GunRootType:StickyBombGun        GunType:Paralysis_StickyBombGun02      Name:StickyBombGun                  Damage:000   Splash:078  Level:003  
+GunRootType:StickyBombGun        GunType:Paralysis_StickyBombGun02      Name:StickyBombGun                  Damage:000   Splash:091  Level:004  
+GunRootType:StickyBombGun        GunType:Paralysis_StickyBombGun02      Name:StickyBombGun                  Damage:000   Splash:109  Level:005  
+GunRootType:StickyBombGun        GunType:Poison_StickyBombGun01         Name:StickyBombGun                  Damage:000   Splash:030  Level:001  
+GunRootType:StickyBombGun        GunType:Poison_StickyBombGun01         Name:StickyBombGun                  Damage:000   Splash:035  Level:002  
+GunRootType:StickyBombGun        GunType:Poison_StickyBombGun01         Name:StickyBombGun                  Damage:000   Splash:040  Level:003  
+GunRootType:StickyBombGun        GunType:Poison_StickyBombGun01         Name:StickyBombGun                  Damage:000   Splash:045  Level:004  
+GunRootType:StickyBombGun        GunType:Poison_StickyBombGun01         Name:StickyBombGun                  Damage:000   Splash:050  Level:005  
+GunRootType:StickyBombGun        GunType:Poison_StickyBombGun02         Name:StickyBombGun                  Damage:000   Splash:035  Level:001  
+GunRootType:StickyBombGun        GunType:Poison_StickyBombGun02         Name:StickyBombGun                  Damage:000   Splash:040  Level:002  
+GunRootType:StickyBombGun        GunType:Poison_StickyBombGun02         Name:StickyBombGun                  Damage:000   Splash:045  Level:003  
+GunRootType:StickyBombGun        GunType:Poison_StickyBombGun02         Name:StickyBombGun                  Damage:000   Splash:050  Level:004  
+GunRootType:StickyBombGun        GunType:Poison_StickyBombGun02         Name:StickyBombGun                  Damage:000   Splash:055  Level:005  
+GunRootType:StickyBombGun        GunType:SleepBombGun                   Name:SleepBombGun_1                 Damage:000   Splash:000  Level:001  
+GunRootType:StickyBombGun        GunType:SleepBombGun                   Name:SleepBombGun_2                 Damage:000   Splash:000  Level:002  
+GunRootType:StickyBombGun        GunType:SleepBombGun                   Name:SleepBombGun_3                 Damage:000   Splash:000  Level:003  
+GunRootType:StickyBombGun        GunType:SleepBombGun                   Name:SleepBombGun_4                 Damage:000   Splash:000  Level:004  
+GunRootType:StickyBombGun        GunType:SleepBombGun                   Name:SleepBombGun_5                 Damage:000   Splash:000  Level:005  
+GunRootType:StickyBombGun        GunType:StickyBombGun                  Name:StickyBombGun                  Damage:000   Splash:030  
+GunRootType:StickyBombGun        GunType:StickyBombGun                  Name:StickyBombGun                  Damage:000   Splash:038  
+GunRootType:StickyBombGun        GunType:StickyBombGun                  Name:StickyBombGun                  Damage:000   Splash:046  
+GunRootType:StickyBombGun        GunType:StickyBombGun                  Name:StickyBombGun                  Damage:000   Splash:057  
+GunRootType:StickyBombGun        GunType:StickyBombGun                  Name:StickyBombGun                  Damage:000   Splash:072  
+GunRootType:StickyBombGun        GunType:StickyBombGun01                Name:StickyBombGun                  Damage:000   Splash:045  
+GunRootType:StickyBombGun        GunType:StickyBombGun01                Name:StickyBombGun                  Damage:000   Splash:053  
+GunRootType:StickyBombGun        GunType:StickyBombGun01                Name:StickyBombGun                  Damage:000   Splash:064  
+GunRootType:StickyBombGun        GunType:StickyBombGun01                Name:StickyBombGun                  Damage:000   Splash:076  
+GunRootType:StickyBombGun        GunType:StickyBombGun01                Name:StickyBombGun                  Damage:000   Splash:090  
+GunRootType:StickyBombGun        GunType:StickyBombGun02                Name:StickyBombGun                  Damage:000   Splash:060  
+GunRootType:StickyBombGun        GunType:StickyBombGun02                Name:StickyBombGun                  Damage:000   Splash:072  
+GunRootType:StickyBombGun        GunType:StickyBombGun02                Name:StickyBombGun                  Damage:000   Splash:084  
+GunRootType:StickyBombGun        GunType:StickyBombGun02                Name:StickyBombGun                  Damage:000   Splash:096  
+GunRootType:StickyBombGun        GunType:StickyBombGun02                Name:StickyBombGun                  Damage:000   Splash:108
+Type:ElectricHead         Damage:004  Level:001  
+Type:ElectricHead         Damage:006  Level:002  
+Type:ElectricHead         Damage:008  Level:003  
+Type:ElectricHead         Damage:010  Level:004  
+Type:ElectricHead         Damage:012  Level:005  
+Type:FireHead             Damage:005  Level:001  
+Type:FireHead             Damage:007  Level:002  
+Type:FireHead             Damage:009  Level:003  
+Type:FireHead             Damage:011  Level:004  
+Type:FireHead             Damage:013  Level:005  
+Type:IceHead              Damage:004  Level:001  
+Type:IceHead              Damage:005  Level:002  
+Type:IceHead              Damage:006  Level:003  
+Type:IceHead              Damage:007  Level:004  
+Type:IceHead              Damage:008  Level:005  
+Type:NormalHead           Damage:000  
+Type:ParalysisHead        Damage:004  Level:001  
+Type:ParalysisHead        Damage:008  Level:002  
+Type:ParalysisHead        Damage:013  Level:003  
+Type:ParalysisHead        Damage:018  Level:004  
+Type:ParalysisHead        Damage:023  Level:005  
+Type:PoisonHead           Damage:003  Level:001  
+Type:PoisonHead           Damage:005  Level:002  
+Type:PoisonHead           Damage:009  Level:003  
+Type:PoisonHead           Damage:013  Level:004  
+Type:PoisonHead           Damage:017  Level:005  
+Type:SleepHead            Damage:000  Level:001  
+Type:SleepHead            Damage:000  Level:002  
+Type:SleepHead            Damage:000  Level:003  
+Type:SleepHead            Damage:000  Level:004  
+Type:SleepHead            Damage:000  Level:005  
+Type:StrongHead           Damage:004  
+Type:StrongHead           Damage:008  
+Type:StrongHead           Damage:012  
+Type:StrongHead           Damage:016  
+Type:StrongHead           Damage:020  
