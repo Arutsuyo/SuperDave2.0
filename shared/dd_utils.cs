@@ -43,7 +43,7 @@ public abstract class DDPlugin : BasePlugin {
 
     public static void _debug_log(object text) {
         if (m_log_level >= LogLevel.Debug) {
-            logger.LogInfo(text);
+            logger.LogDebug(text);
         }
     }
 
